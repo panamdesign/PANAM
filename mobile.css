@@ -1,0 +1,347 @@
+:root{
+    --primary-color: rgb(255, 188, 26);
+    --secondary-color: #181615;
+    --light-color: rgb(207, 197, 187);
+    scroll-behavior: smooth;
+ }
+
+ @media (orientation: landscape) and (min-width: 350px){
+    .nav-scrolled{
+        min-height: 20vh !important;
+       
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .product-text,
+    .product-text-baseline,
+    .product-text-pd-btm
+    {
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding: 2rem 0rem ;
+    }
+
+    .title-home h2{
+        text-shadow: 2px 2px var(--secondary-color);
+    }
+
+    .method-big-title,
+    .method-big-title2{
+        padding: 0rem !important;
+    }
+
+    .home-card-title,
+    .home-card-title-tm{
+    padding: 3.5rem 1.225rem !important;
+    
+    }
+    .step,
+    .product-script {
+        max-width: 100% !important;
+     
+    }
+
+            .method-text{
+            width: 80vw;
+            margin: 40px auto;
+        }
+
+        .btncard-sm-light{
+            font-size: 1.4rem;
+        }
+    }
+
+
+@media only screen and (max-width: 1070px) {
+
+    p{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        font-weight: 700;
+    }
+    
+    h4{
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+
+    #the-form{
+        padding-top: 20vh;
+        height: auto;
+    }
+
+    #header-inactive{
+   
+    position: fixed;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 20vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    transition: 0.4s ease;
+}
+
+.ctr2{
+    margin: 60px 10vw;
+  
+}
+
+
+.menu-flower img{
+    height: 30px;
+    width: 30px;
+    transition: 0.8s ease;
+    z-index: 500;
+}
+
+.logo-hide{
+    padding-top: 5px;
+    padding-left: 5px;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.1s ease;
+      
+
+}
+
+.logo-hide img{
+    height: 70px;
+}
+
+.home-btn a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.toggler{
+   
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    z-index: 505;
+    opacity: 0;
+    cursor: pointer;
+    margin-right: 10vw;
+}
+
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    right: -1150px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    flex: none;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    
+}
+
+.menu-wrap ul{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-top: 15vh;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: -20;
+}
+
+.menu-wrap ul li{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 3rem;
+    padding: 15px 0px;
+    left: 0;
+    
+}
+
+.menu-wrap ul li a{
+    color: white;
+    transition: 0.4s ease; 
+    
+}
+
+.menu-wrap ul li a:hover{
+    color: var(--primary-color);
+}
+
+ #header-inactive .toggler:checked ~ .menu-wrap{
+    visibility: visible;
+    right: 0;
+}
+
+
+.toggler:checked + .menu-flower > img {
+    transform: rotate(360deg);
+}
+
+.logo-inactive,
+.logo-inactive-wrap{
+   
+    position: absolute;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}
+
+
+/* BLACK NAVBAR VERSION 
+
+.logo-inactive-wrap::after{
+    
+    content: '' ;
+    background-image: url(/images/logoblk70.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    z-index: -30;
+    
+} 
+
+.menu-flower::before{
+    content: url(./images/flowerblkburg.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.3s ease;
+    
+}
+
+*/
+
+/*YELLOW NAVBAR VERSION*/
+
+.logo-inactive-wrap::after{
+    
+    content: '' ;
+    background-image: url(/images/logo-yl70.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    z-index: -30;
+    
+}
+
+.menu-flower::before{
+    content: url(./images/fleur-yl.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.3s ease;
+    
+}
+
+/*----------------------*/
+
+.menu-flower{
+    width: 60px;
+    height: 60px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    margin-right: 10vw;
+}
+
+
+.menu-flower::after{
+    content: url(./images/fleur-yl.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    
+}
+
+.icons-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.icons-menu a{
+    padding: 0.5rem;
+
+}
+
+.icons-menu ul li{
+    padding: 0.5rem;
+}
+
+
+
+.toggler:checked + .menu-flower::before,
+.toggler:checked + .menu-flower::after{
+    transform: rotate(360deg);
+    visibility: visible;
+}
+
+.toggler:checked ~ .logo-inactive-wrap > div{
+    visibility: visible;
+}
+
+
+
+.nav-scrolled{
+    
+    background-color: var(--secondary-color) ;
+    box-shadow: 0px 5px 15px var(--primary-color);
+    transition: 0.2s ease;
+    height: 18vh !important;
+   
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

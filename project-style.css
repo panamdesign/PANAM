@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgba(255, 188, 26, 1);
+    --secondary-color: #181615;
+    --light-color: #cfc5bb;
+ }
+
+body{
+    font-size: 62.5%;
+    font-family: 'Georama', sans-serif;
+}
+
+.project-top{
+    
+    background-image: url(/images/JPEG/projects-bg-min.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 10;
+}
+
+.project-top::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(24, 22, 21, 0.2);
+    
+}
+
+@media (max-width: 1070px){
+
+    .project-top{
+    background-attachment: scroll
+}
+}

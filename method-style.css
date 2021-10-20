@@ -1,0 +1,306 @@
+:root{
+    --primary-color: #ffbc1a;
+    --secondary-color: #181615;
+    --light-color: #cfc5bb;
+    scroll-behavior: smooth;
+    
+ }
+ 
+ .no-pointer a{
+     pointer-events: none;
+     
+ }
+
+ .method-top{
+    background-image: url(./images/JPEG/method.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 5;
+}
+
+.method-top::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index:2;
+    background-color: rgba(24, 22, 21, 0.6);
+    
+}
+
+
+#branding::before{
+ 
+    bottom:-15px;
+    left: 0;
+    height: 10px;
+    z-index: 20;
+    width: 100%;
+}
+
+.active a{
+    color: var(--primary-color);
+} 
+
+.active-dark a{
+    color: var(--secondary-color);
+} 
+ /*ANCHOR OFFSET*/
+
+ #branding::before{
+    display: block; 
+    content: ""; 
+    margin-top: 40px; 
+    height: 10px; 
+    visibility: hidden; 
+    pointer-events: none;
+    box-shadow: 0px -8px 10px 0px var(--primary-color);
+}
+
+#time-machine::before{
+    display: block; 
+    content: ""; 
+    margin-top: 40px; 
+    height: 10px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#time-machine,
+#branding{
+    padding-top: 50px;
+}
+ /* @font-face{
+    font-family: 'Chomsky';
+    src: url(/Chomsky.woff) format('woff');
+ }
+
+ .method-home h1{
+     font-family: 'Chomsky';
+     text-align: center;
+     font-weight: 400;
+     font-size: 8rem;
+     color:var(--primary-color);
+ }
+
+
+
+ h1 span{
+    transition: 0.5s ease;
+    text-shadow:2px 2px #181615, 
+                4px 4px #181615;
+}
+
+ h1:hover span{
+    text-shadow: 0px 0px 2px #ffbc1a,
+    0px 0px 6px #ffbc1a;
+ }
+  */
+
+
+#products{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0px auto;
+    width: 80vw;
+    color: var(--secondary-color);
+}
+
+.product-script{
+    flex-basis:50%;
+    max-width: 50%;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.method-big-title,
+.method-big-title2{
+    display: block;
+    margin: 40px 10vw 20px 10vw;
+    width: 80vw;
+}
+
+
+.method-big-title img{
+    max-width: 500px;
+}
+
+.method-big-title2 img{
+    max-width: 370px;
+}
+
+.step{
+    max-width: 50%;
+    flex-basis:50%;
+}
+
+.step h1{
+    font-size: 5rem;
+    font-weight: 200;
+    font-stretch: condensed;
+    padding-bottom: 15px;
+}
+
+.method-text{
+    max-width: 80vw;
+    margin: 40px 10vw 60px 10vw;
+}
+
+.method-text p{
+    
+    height: 100%;
+    width: 100%;
+}
+
+.method-text ul{
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.vignettes{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 0;
+    height: auto;
+}
+
+.vignette-wrap{
+    height: 100%;
+    width: 100%;
+}
+
+.vignette-1,
+.vignette-2,
+.vignette-3{
+    background-color: var(--primary-color);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.vignette-title{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+.icon-1{
+    background-image: url(/images/JPEG/welcome.svg);
+    background-repeat: no-repeat;
+    /* margin-bottom: 20px; */
+    background-position: center;
+    height: 300px;
+}
+.icon-2{
+    background-image: url(/images/JPEG/vetruvian.svg);
+    background-repeat: no-repeat;
+    /* margin-bottom: 20px; */
+    background-position: center;
+    height: 300px;
+}
+.icon-3{
+    background-image: url(/images/JPEG/icon3-tm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin-bottom: 20px; */
+    height: 300px;
+}
+
+
+
+@media (max-width: 1070px){
+
+    #products{
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .vignettes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vignette-1,
+    .vignette-2,
+    .vignette-3{
+       
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+}
+
+}
+
+
+@media (min-width: 1300px){
+
+    .vignette-1,
+    .vignette-2,
+    .vignette-3{
+        padding: 5rem 1.5rem;
+    }
+
+}
+
+
+ @media (min-width: 320px) and (max-width: 1070px){
+
+    .ctr{
+        margin: 80px 10vw;
+        max-width: 130ch;
+    }
+
+    .ctr2{
+        margin: 150px 10vw 20px 10vw;
+        max-width: 130ch;
+    }
+
+    .ctr3{
+        margin: 50px 10vw;
+        max-width: 130ch;
+    }
+    }
+
+ 
+ @media (min-width: 320px) and (max-width: 568px){
+
+
+ .step h1{
+    font-size: 3.5rem;
+    font-weight: 200;
+    font-stretch: condensed;
+    padding-bottom: 15px;
+}
+ }
+ 
+ @media (max-width: 1070px){
+
+        .method-top{
+        background-attachment: scroll
+    }
+    }
+
+    @media (min-width: 768px){
+
+        #products{
+            margin-top: 40px;
+        }
+    }
+
+ 
