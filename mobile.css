@@ -251,7 +251,7 @@
 .logo-inactive-wrap::after{
     
     content: '' ;
-    background-image: url(/images/logo-yl70.svg);
+    background-image: url(/images/JPEG/new_logo.svg);
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.4s ease;

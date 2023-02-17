@@ -1,7 +1,7 @@
 :root{
-   --primary-color: rgb(255, 188, 26);
+   --primary-color: #ffbc1a;
    --secondary-color: #181615;
-   --light-color: rgb(235, 229, 225);
+   --light-color: rgb(255, 255, 255);
    scroll-behavior: smooth;
 }
 
@@ -214,6 +214,35 @@ html{
     
 }
 
+.main-title{
+    
+    position: absolute;
+    left: 50vw;
+    color: var(--primary-color);
+    font-size: 8rem;
+    top: 25%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-shadow: 4px 2px var(--secondary-color);
+}
+
+.main-title h1{
+    font-family: 'Linux Libertine' !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title h3{
+    font-family: 'Gill Sans MT Pro' !important;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-85%);
+}
+
+
+
 .title-home{
     position: absolute;
     left: 10vw;
@@ -275,7 +304,7 @@ html{
 .branding-card{
     display: flex;
     align-items: flex-start;
-    height: 700px;
+    height: 800px;
     
 }
 
